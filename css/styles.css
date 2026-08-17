@@ -233,7 +233,7 @@ section{ padding:110px 0; }
 #producto{
   position:relative; color:#fff;
   background:linear-gradient(180deg,rgba(15,23,29,.94),rgba(15,23,29,.97)),
-             url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1920&auto=format&fit=crop') center/cover fixed;
+             url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1920&auto=format&fit=crop') center/cover fixed;
 }
 #producto .label{ color:var(--gold-light); }
 #producto .section-title{ color:#fff; }
@@ -252,7 +252,7 @@ section{ padding:110px 0; }
 .led-panel-body{
   position:absolute; inset:0;
   background:linear-gradient(160deg,rgba(46,69,80,.4),rgba(15,23,29,.75)),
-             url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop') center/cover;
+             url('https://images.unsplash.com/photo-1554224154-22dec7ec8818?q=80&w=1200&auto=format&fit=crop') center/cover;
 }
 .p-badge{
   position:absolute; display:flex; align-items:center; gap:9px; padding:12px 18px; border-radius:14px;
@@ -280,6 +280,35 @@ section{ padding:110px 0; }
 .sector-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow); }
 .sector-icon{ font-size:26px; color:var(--gold); margin-bottom:16px; }
 .sector-card h3{ font-size:15px; font-weight:600; color:var(--slate); font-family:var(--font-body); }
+
+/* ══════════════ SEGURIDAD SOCIAL CALLOUT ══════════════ */
+.ss-callout{ padding:60px 0; }
+.ss-box{
+  position:relative; overflow:hidden; border-radius:24px;
+  background:linear-gradient(120deg,var(--slate),var(--dark));
+  padding:56px 48px; display:flex; align-items:center; gap:34px; flex-wrap:wrap;
+  box-shadow:var(--shadow);
+}
+.ss-box::before{
+  content:""; position:absolute; inset:0;
+  background-image:radial-gradient(circle at 85% 20%, rgba(216,188,128,.16), transparent 55%);
+  pointer-events:none;
+}
+.ss-icon{
+  width:64px; height:64px; border-radius:16px; flex-shrink:0; background:rgba(216,188,128,.14);
+  border:1px solid rgba(216,188,128,.35); color:var(--gold-light); font-size:24px;
+  display:flex; align-items:center; justify-content:center; position:relative; z-index:1;
+}
+.ss-text{
+  flex:1; min-width:260px; color:#fff; font-family:var(--font-display); font-weight:500;
+  font-size:clamp(19px,2.2vw,26px); line-height:1.4; position:relative; z-index:1;
+}
+.ss-text .gold-light{ color:var(--gold-light); font-style:italic; }
+.ss-box .btn-gold{ position:relative; z-index:1; flex-shrink:0; }
+
+@media (max-width:700px){
+  .ss-box{ padding:38px 28px; text-align:center; flex-direction:column; }
+}
 
 /* ══════════════ CONTACTO ══════════════ */
 .contact-hdr{ max-width:560px; margin-bottom:52px; }
